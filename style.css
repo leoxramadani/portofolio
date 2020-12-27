@@ -289,14 +289,14 @@ CONTENT
 #bio{
     z-index: 10;
     position: absolute;
-    width:350px;
+    width:auto;
     height:auto;
     background:transparent;
     padding:5px;
     align-self: center;
     border-radius:25px;
     box-shadow: 12px 12px 19px black;
-    margin-left:35%;
+    margin-left:33%;
     margin-top:15%;
 }
 #bio img{
@@ -314,7 +314,22 @@ CONTENT
 #bio i{
     color:White;
 }
-
+@media only screen and (max-width: 800px) {
+    #bio {
+        margin-left:20%;
+    }
+}
+@media only screen and (max-width: 700px) {
+    #bio {
+        margin-left:12%;
+    }
+}
+@media only screen and (max-width:400px) {
+    #bio {
+        margin-left:10%;
+        margin-top:20%;
+    }
+}
 
 /* Usual suspects */
 * {
